@@ -32,7 +32,7 @@ const Home = ({ name, setName, fetchQuestions }) => {
         <span style={{fontSize: 30}}>Quiz Settings</span>
 
         <div className='settings__select'>
-          {error && <ErrorMessage>Please Fill all the feilds</ErrorMessage>}
+          {error && <ErrorMessage>Please Fill all the fields</ErrorMessage>}
           <TextField 
             style={{marginBottom: 25}} 
             label='Enter Your Name' 

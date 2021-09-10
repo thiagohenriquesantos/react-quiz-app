@@ -2,10 +2,12 @@ import { CircularProgress } from "@material-ui/core";
 import { useEffect, useState } from "react";
 import Question from "../../components/Question/Question";
 import "./Quiz.css";
+import { formatTimer } from "../../utils/formatTimer";
 
 const Quiz = ({ name, questions, score, setScore, setQuestions }) => {
   const [options, setOptions] = useState();
   const [currQues, setCurrQues] = useState(0);
+  const estadoInicial = new Date;
 
   useEffect(() => {
     setOptions(
@@ -26,7 +28,7 @@ const Quiz = ({ name, questions, score, setScore, setQuestions }) => {
   return (
     <div className="quiz">
       <span className="subtitle">Welcome, {name}</span>
-
+      
       {questions ? (
         <>
           <div className="quizInfo">
