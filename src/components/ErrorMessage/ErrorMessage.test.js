@@ -11,4 +11,11 @@ describe("ErrorMessage", () => {
         expect(screen.getByText(testMessage)).toBeInTheDocument()
     })
   })
+  describe("Quando ele não é renderizado com children", () => {
+    it("Ele não renderiza o texto passado", () => {
+        const testMessage = 'Test Message'
+        render(<ErrorMessage></ErrorMessage>)
+        expect(screen.queryByText(testMessage)).toBeNull()
+    })
+  })
 });
