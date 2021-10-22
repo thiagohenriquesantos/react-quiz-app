@@ -5,9 +5,9 @@ import Footer from './Footer';
 
 describe("Footer", () => {
   describe("Quando ele é renderizado", () => {
-    it("Ele renderiza o texto passado", () => {
+    it("Ele renderiza o texto", () => {
         const testMessage = 'Made with ♥ by'
-        render(<Footer>{testMessage}</Footer>)
+        render(<Footer/>)
         expect(screen.getByText(testMessage)).toBeInTheDocument()
     })
   })

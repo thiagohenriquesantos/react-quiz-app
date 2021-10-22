@@ -14,8 +14,10 @@ const Result = ({name, score}) => {
     }
   }, [name, history])
 
+  if (score >= 6) {
   return (
     <div className="result">
+      <span className="title">You passed!</span>
       <span className="title">Final Score : {score}</span>
       <Button
         variant="contained"
@@ -27,7 +29,23 @@ const Result = ({name, score}) => {
         Go to homepage
       </Button>
     </div>
-  )
+  )} else {
+    return (
+      <div className="result">
+        <span className="title">You failed!</span>
+        <span className="title">Final Score : {score}</span>
+        <Button
+          variant="contained"
+          color="secondary"
+          size="large"
+          style={{ alignSelf: "center", marginTop: 20 }}
+          href="/"
+        >
+          Go to homepage
+        </Button>
+      </div>
+    )  
+  }
 }
 
 export default Result
