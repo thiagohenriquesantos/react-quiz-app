@@ -1,3 +1,15 @@
+Intutive Quiz Hub
+
+![Captura de tela de 2021-10-22 17-47-25](https://user-images.githubusercontent.com/41977517/138521051-5d152838-61aa-44f5-b44b-87484bb67d87.png)
+
+Desktop View
+
+![Captura de tela de 2021-10-22 17-49-10](https://user-images.githubusercontent.com/41977517/138521226-6ff212e3-83fc-405f-8ec0-f533ebf9ea40.png)
+
+Mobile view
+
+Live on [Heroku](https://quiz-in-react.herokuapp.com/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
